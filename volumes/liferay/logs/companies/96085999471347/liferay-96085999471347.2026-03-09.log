@@ -1,0 +1,69 @@
+2026-03-09 13:29:14.333 WARN  [liferay/mail-3][MailMessageListener:116] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-03-09 13:29:14.333 WARN  [liferay/mail-2][MailMessageListener:116] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-03-09 13:29:14.350 WARN  [liferay/mail-3][MailMessageListener:42] Skipping email because the sender is not specified
+2026-03-09 13:29:14.350 WARN  [liferay/mail-2][MailMessageListener:42] Skipping email because the sender is not specified
+2026-03-09 13:29:22.400 ERROR [CM Configuration Updater (ManagedServiceFactory Update: factoryPid=[com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration])][BatchingBatch:134] HHH000315: Exception executing batch [java.sql.BatchUpdateException: Batch entry 0 insert into OAuthClientEntry (mvccVersion, companyId, userId, userName, createDate, modifiedDate, authRequestParametersJSON, authServerWellKnownURI, clientId, infoJSON, oidcUserInfoMapperJSON, tokenRequestParametersJSON, oAuthClientEntryId) values (('0'::int8), ('96085999471347'::int8), ('20095'::int8), (NULL), ('2026-03-09 13:29:22.382+00'), ('2026-03-09 13:29:22.382+00'), ('{"scope":"openid profile email","response_type":"code"}'), ('http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration'), ('liferay-portal-client'), ('{"grant_types":["authorization_code","refresh_token"],"application_type":"web","client_secret_expires_at":0,"scope":"openid profile email","client_secret":"dummy","client_name":"Client to eSignet","token_endpoint_auth_method":"client_secret_basic","client_id":"liferay-portal-client","response_types":["code"],"id_token_signed_response_alg":"RS256"}'), ('{"address":{"zip":"address->postal_code","country":"address->country","city":"address->locality","addressType":"","street":"address->street_address","region":"address->region"},"phone":{"phoneType":"","phone":"phone_number"},"contact":{"birthdate":"birthdate","gender":"gender"},"users_roles":{"roles":""},"user":{"firstName":"given_name","lastName":"family_name","emailAddress":"email","jobTitle":"","languageId":"locale","middleName":"middle_name","screenName":""}}'), ('{"grant_type":"authorization_code","scope":"openid profile email"}'), ('29809'::int8)) was aborted: ERROR: duplicate key value violates unique constraint "ix_fec415c2"
+  Detail: Key (companyid, authserverwellknownuri, clientid)=(96085999471347, http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration, liferay-portal-client) already exists.  Call getNextException to see other errors in the batch.], SQL: insert into OAuthClientEntry (mvccVersion, companyId, userId, userName, createDate, modifiedDate, authRequestParametersJSON, authServerWellKnownURI, clientId, infoJSON, oidcUserInfoMapperJSON, tokenRequestParametersJSON, oAuthClientEntryId) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-09 13:29:22.402 ERROR [CM Configuration Updater (ManagedServiceFactory Update: factoryPid=[com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration])][SqlExceptionHelper:142] Batch entry 0 insert into OAuthClientEntry (mvccVersion, companyId, userId, userName, createDate, modifiedDate, authRequestParametersJSON, authServerWellKnownURI, clientId, infoJSON, oidcUserInfoMapperJSON, tokenRequestParametersJSON, oAuthClientEntryId) values (('0'::int8), ('96085999471347'::int8), ('20095'::int8), (NULL), ('2026-03-09 13:29:22.382+00'), ('2026-03-09 13:29:22.382+00'), ('{"scope":"openid profile email","response_type":"code"}'), ('http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration'), ('liferay-portal-client'), ('{"grant_types":["authorization_code","refresh_token"],"application_type":"web","client_secret_expires_at":0,"scope":"openid profile email","client_secret":"dummy","client_name":"Client to eSignet","token_endpoint_auth_method":"client_secret_basic","client_id":"liferay-portal-client","response_types":["code"],"id_token_signed_response_alg":"RS256"}'), ('{"address":{"zip":"address->postal_code","country":"address->country","city":"address->locality","addressType":"","street":"address->street_address","region":"address->region"},"phone":{"phoneType":"","phone":"phone_number"},"contact":{"birthdate":"birthdate","gender":"gender"},"users_roles":{"roles":""},"user":{"firstName":"given_name","lastName":"family_name","emailAddress":"email","jobTitle":"","languageId":"locale","middleName":"middle_name","screenName":""}}'), ('{"grant_type":"authorization_code","scope":"openid profile email"}'), ('29809'::int8)) was aborted: ERROR: duplicate key value violates unique constraint "ix_fec415c2"
+  Detail: Key (companyid, authserverwellknownuri, clientid)=(96085999471347, http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration, liferay-portal-client) already exists.  Call getNextException to see other errors in the batch.
+2026-03-09 13:29:22.403 ERROR [CM Configuration Updater (ManagedServiceFactory Update: factoryPid=[com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration])][SqlExceptionHelper:142] ERROR: duplicate key value violates unique constraint "ix_fec415c2"
+  Detail: Key (companyid, authserverwellknownuri, clientid)=(96085999471347, http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration, liferay-portal-client) already exists.
+2026-03-09 13:30:55.587 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:520] Initializing com.liferay.site.initializer.welcome for group 20117
+2026-03-09 13:30:55.605 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addStyleBookEntries took 1 ms
+2026-03-09 13:30:55.611 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateUserGroups took 4 ms
+2026-03-09 13:30:55.621 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDataDefinitions took 6 ms
+2026-03-09 13:30:55.623 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSiteSettings took 1 ms
+2026-03-09 13:30:55.626 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateListTypeDefinitions took 0 ms
+2026-03-09 13:30:55.644 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateRoles took 8 ms
+2026-03-09 13:30:55.704 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountGroups took 59 ms
+2026-03-09 13:30:55.705 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDDMStructures took 0 ms
+2026-03-09 13:30:55.707 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateExpandoColumns took 0 ms
+2026-03-09 13:30:55.709 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking setPLOEntries took 0 ms
+2026-03-09 13:30:56.928 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateLayouts took 1218 ms
+2026-03-09 13:30:56.930 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateOrganizations took 0 ms
+2026-03-09 13:30:56.931 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccounts took 0 ms
+2026-03-09 13:30:56.932 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSiteConfiguration took 0 ms
+2026-03-09 13:30:56.934 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDepotEntries took 0 ms
+2026-03-09 13:30:56.935 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectFolders took 0 ms
+2026-03-09 13:30:56.937 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addWorkflowDefinitions took 0 ms
+2026-03-09 13:30:56.939 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addKeywords took 0 ms
+2026-03-09 13:30:56.941 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateKnowledgeBaseArticles took 2 ms
+2026-03-09 13:30:56.943 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSAPEntries took 0 ms
+2026-03-09 13:30:56.944 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateTaxonomyVocabularies took 1 ms
+2026-03-09 13:30:56.959 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking updateLayoutSets took 14 ms
+2026-03-09 13:30:56.961 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountsOrganizations took 0 ms
+2026-03-09 13:30:56.962 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addPortletSettings took 0 ms
+2026-03-09 13:30:56.964 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSXPBlueprint took 0 ms
+2026-03-09 13:30:56.965 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountGroupAssignments took 0 ms
+2026-03-09 13:31:02.357 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDocuments took 5391 ms
+2026-03-09 13:31:02.359 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addFragmentEntries took 1 ms
+2026-03-09 13:31:02.360 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addUserAccounts took 0 ms
+2026-03-09 13:31:02.363 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateClientExtensionEntries took 2 ms
+2026-03-09 13:31:02.365 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addRolesAssignments took 0 ms
+2026-03-09 13:31:02.366 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSegmentsEntries took 0 ms
+2026-03-09 13:31:02.367 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateBlogPostings took 0 ms
+2026-03-09 13:31:02.375 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addObjectDefinitions took 7 ms
+2026-03-09 13:31:02.378 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addUserRoles took 0 ms
+2026-03-09 13:31:02.380 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectRelationships took 1 ms
+2026-03-09 13:31:02.381 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateAssetLinkEntries took 0 ms
+2026-03-09 13:31:02.384 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectFields took 1 ms
+2026-03-09 13:31:02.385 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking publishObjectDefinitions took 1 ms
+2026-03-09 13:31:02.387 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateAccountEntryRestrictions took 0 ms
+2026-03-09 13:31:02.389 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateNotificationTemplates took 0 ms
+2026-03-09 13:31:02.391 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAssetListEntries took 1 ms
+2026-03-09 13:31:02.393 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectActions took 1 ms
+2026-03-09 13:31:02.395 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectEntries took 0 ms
+2026-03-09 13:31:02.481 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDDMTemplates took 84 ms
+2026-03-09 13:31:02.483 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateJournalArticles took 0 ms
+2026-03-09 13:31:02.485 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addCPDefinitions took 0 ms
+2026-03-09 13:31:04.871 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addLayoutUtilityPageEntries took 2385 ms
+2026-03-09 13:31:04.873 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addLayoutPageTemplates took 0 ms
+2026-03-09 13:31:07.060 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateLayoutsContent took 2187 ms
+2026-03-09 13:31:07.061 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSegmentsExperiences took 0 ms
+2026-03-09 13:31:07.063 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addExpandoValues took 1 ms
+2026-03-09 13:31:07.064 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateResourcePermissions took 0 ms
+2026-03-09 13:31:07.065 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:538] Initialized com.liferay.site.initializer.welcome for group 20117 in 11478 ms
+2026-03-09 13:32:29.143 INFO  [http-nio-8080-exec-6][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260309133229109YIDUBMZD
+2026-03-09 13:34:32.098 WARN  [http-nio-8080-exec-7][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-09 14:15:31.962 INFO  [http-nio-8080-exec-6][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260309141531927ZJYLDLOC
+2026-03-09 14:15:32.153 WARN  [http-nio-8080-exec-6][extend_session_jsp:598] Unable to extend the HTTP session

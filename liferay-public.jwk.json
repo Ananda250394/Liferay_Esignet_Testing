@@ -1,0 +1,8 @@
+{
+  "kty": "RSA",
+  "n": "1ezsfOigFGZ5clCjO2ybIqZ87d-xh069n-ZK9-6nuq-ieOdP8u4G00COI0vORMrd8QkLnNcaDeHLYtSkn9xvj6Fd8u9K-JNlGSMNCZQ7wVASBuCUF_U-_sg6YLCzr0JqO7iSxXucjqnHv1AFQv0FORbS2DDL_WRn9QRP2C9MZjzJ0P8upAgkGEq8RaBx0ZSbpTKUXyS5-yFtiXs74b_VsfOc18mhdSl7HYyt71v1G86sw7XuVbKrHXQcXNDuyggZqrIB8Nq2bTQXiAqnY5pFBq9a9xFCEWZB0vl3Bn2MFDAdM5wBD691X6flqYSQTXq7udx1frVxYBVYhWmqoEcR3Q",
+  "e": "AQAB",
+  "use": "sig",
+  "alg": "RS256",
+  "kid": "liferay-key-1"
+}

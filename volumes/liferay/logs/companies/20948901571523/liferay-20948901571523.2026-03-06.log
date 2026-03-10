@@ -1,0 +1,115 @@
+2026-03-06 04:47:05.478 WARN  [liferay/mail-2][MailMessageListener:116] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-03-06 04:47:05.479 WARN  [liferay/mail-3][MailMessageListener:116] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-03-06 04:47:05.488 WARN  [liferay/mail-2][MailMessageListener:42] Skipping email because the sender is not specified
+2026-03-06 04:47:05.488 WARN  [liferay/mail-3][MailMessageListener:42] Skipping email because the sender is not specified
+2026-03-06 04:48:37.160 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:520] Initializing com.liferay.site.initializer.welcome for group 20117
+2026-03-06 04:48:37.177 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectFolders took 0 ms
+2026-03-06 04:48:37.186 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateRoles took 7 ms
+2026-03-06 04:48:37.188 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addStyleBookEntries took 0 ms
+2026-03-06 04:48:37.190 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateUserGroups took 0 ms
+2026-03-06 04:48:37.192 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateExpandoColumns took 0 ms
+2026-03-06 04:48:37.193 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addWorkflowDefinitions took 0 ms
+2026-03-06 04:48:37.296 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountGroups took 101 ms
+2026-03-06 04:48:38.518 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateLayouts took 1221 ms
+2026-03-06 04:48:38.520 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSAPEntries took 0 ms
+2026-03-06 04:48:38.521 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccounts took 0 ms
+2026-03-06 04:48:38.523 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSiteSettings took 0 ms
+2026-03-06 04:48:38.524 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDDMStructures took 0 ms
+2026-03-06 04:48:38.529 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDataDefinitions took 3 ms
+2026-03-06 04:48:38.530 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSiteConfiguration took 0 ms
+2026-03-06 04:48:38.532 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking setPLOEntries took 0 ms
+2026-03-06 04:48:38.534 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateListTypeDefinitions took 0 ms
+2026-03-06 04:48:38.535 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountGroupAssignments took 0 ms
+2026-03-06 04:48:38.537 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDepotEntries took 0 ms
+2026-03-06 04:48:38.539 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateKnowledgeBaseArticles took 0 ms
+2026-03-06 04:48:38.540 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateOrganizations took 0 ms
+2026-03-06 04:48:38.542 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateTaxonomyVocabularies took 1 ms
+2026-03-06 04:48:38.560 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking updateLayoutSets took 16 ms
+2026-03-06 04:48:38.564 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAccountsOrganizations took 1 ms
+2026-03-06 04:48:43.961 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDocuments took 5396 ms
+2026-03-06 04:48:43.963 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addKeywords took 0 ms
+2026-03-06 04:48:43.965 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addFragmentEntries took 0 ms
+2026-03-06 04:48:43.967 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addPortletSettings took 1 ms
+2026-03-06 04:48:43.968 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSXPBlueprint took 0 ms
+2026-03-06 04:48:43.969 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateBlogPostings took 0 ms
+2026-03-06 04:48:43.972 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateClientExtensionEntries took 2 ms
+2026-03-06 04:48:43.974 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addUserAccounts took 0 ms
+2026-03-06 04:48:43.975 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addUserRoles took 0 ms
+2026-03-06 04:48:43.976 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addRolesAssignments took 0 ms
+2026-03-06 04:48:43.978 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateSegmentsEntries took 0 ms
+2026-03-06 04:48:43.983 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addObjectDefinitions took 4 ms
+2026-03-06 04:48:43.984 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateAssetLinkEntries took 0 ms
+2026-03-06 04:48:43.986 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectRelationships took 0 ms
+2026-03-06 04:48:43.987 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectFields took 0 ms
+2026-03-06 04:48:43.988 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking publishObjectDefinitions took 0 ms
+2026-03-06 04:48:44.049 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateDDMTemplates took 59 ms
+2026-03-06 04:48:44.050 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateAccountEntryRestrictions took 0 ms
+2026-03-06 04:48:44.051 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateNotificationTemplates took 0 ms
+2026-03-06 04:48:44.053 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addAssetListEntries took 0 ms
+2026-03-06 04:48:44.053 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateJournalArticles took 0 ms
+2026-03-06 04:48:44.054 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectActions took 0 ms
+2026-03-06 04:48:44.055 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateObjectEntries took 0 ms
+2026-03-06 04:48:44.056 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addCPDefinitions took 0 ms
+2026-03-06 04:48:44.057 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addLayoutPageTemplates took 0 ms
+2026-03-06 04:48:46.580 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateLayoutsContent took 2522 ms
+2026-03-06 04:48:46.581 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addSegmentsExperiences took 0 ms
+2026-03-06 04:48:48.074 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addLayoutUtilityPageEntries took 1491 ms
+2026-03-06 04:48:48.075 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addOrUpdateResourcePermissions took 0 ms
+2026-03-06 04:48:48.077 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:5576] Invoking addExpandoValues took 0 ms
+2026-03-06 04:48:48.078 INFO  [http-nio-8080-exec-1][BundleSiteInitializer:538] Initialized com.liferay.site.initializer.welcome for group 20117 in 10918 ms
+2026-03-06 04:48:48.254 INFO  [http-nio-8080-exec-4][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306044848217QRHABHGG
+2026-03-06 04:53:09.005 INFO  [http-nio-8080-exec-9][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306045308975XEPAWVSK
+2026-03-06 04:56:18.233 WARN  [liferay/mail-2][MailMessageListener:116] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-03-06 04:56:18.236 WARN  [liferay/mail-2][MailMessageListener:42] Skipping email because the sender is not specified
+2026-03-06 05:49:29.786 INFO  [http-nio-8080-exec-9][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306054929753KYBYGRQW
+2026-03-06 06:25:53.636 INFO  [http-nio-8080-exec-7][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306062553601PLQFFBYC
+2026-03-06 06:40:50.979 INFO  [http-nio-8080-exec-1][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306064050943OJGDASSE
+2026-03-06 06:40:51.016 WARN  [http-nio-8080-exec-1][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 06:44:46.375 INFO  [http-nio-8080-exec-3][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306064446344BSKTIZAA
+2026-03-06 06:49:38.375 WARN  [http-nio-8080-exec-5][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 06:49:38.385 WARN  [http-nio-8080-exec-6][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 07:03:06.867 INFO  [http-nio-8080-exec-5][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306070306829IWBLATPK
+2026-03-06 07:12:38.367 WARN  [http-nio-8080-exec-6][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 07:49:08.598 INFO  [http-nio-8080-exec-10][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306074908566ETUJYPEQ
+2026-03-06 07:51:58.292 INFO  [http-nio-8080-exec-10][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260306075158261KUKGTECQ
+2026-03-06 08:15:38.381 WARN  [http-nio-8080-exec-8][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 08:15:38.389 WARN  [http-nio-8080-exec-1][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 08:15:38.399 WARN  [http-nio-8080-exec-7][extend_session_jsp:598] Unable to extend the HTTP session
+2026-03-06 09:06:47.816 WARN  [CM Configuration Updater (Delete: pid=com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration~esignet)][OpenIdConnectProviderPortalInstanceLifecycleListener:165] No OAuthClientEntry exists with the key {companyId=20948901571523, authServerWellKnownURI=http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration, clientId=liferay-portal-client}
+com.liferay.oauth.client.persistence.exception.NoSuchOAuthClientEntryException: No OAuthClientEntry exists with the key {companyId=20948901571523, authServerWellKnownURI=http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration, clientId=liferay-portal-client}
+	at com.liferay.oauth.client.persistence.service.persistence.impl.OAuthClientEntryPersistenceImpl.findByC_A_C(OAuthClientEntryPersistenceImpl.java:2939) ~[?:?]
+	at com.liferay.oauth.client.persistence.service.impl.OAuthClientEntryLocalServiceImpl.deleteOAuthClientEntry(OAuthClientEntryLocalServiceImpl.java:149) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:41) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:60) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:48) ~[portal-impl.jar:?]
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:70) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:48) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:40) ~[portal-impl.jar:?]
+	at com.sun.proxy.$Proxy460.deleteOAuthClientEntry(Unknown Source) ~[?:?]
+	at com.liferay.portal.security.sso.openid.connect.internal.configuration.instance.lifecycle.OpenIdConnectProviderPortalInstanceLifecycleListener._deleteOAuthClientEntry(OpenIdConnectProviderPortalInstanceLifecycleListener.java:159) ~[?:?]
+	at com.liferay.portal.security.sso.openid.connect.internal.configuration.instance.lifecycle.OpenIdConnectProviderPortalInstanceLifecycleListener.lambda$_deleteOAuthClientEntries$1(OpenIdConnectProviderPortalInstanceLifecycleListener.java:140) ~[?:?]
+	at com.liferay.portal.service.impl.CompanyLocalServiceImpl.forEachCompanyId(CompanyLocalServiceImpl.java:705) [portal-impl.jar:?]
+	at com.liferay.portal.service.impl.CompanyLocalServiceImpl.forEachCompanyId(CompanyLocalServiceImpl.java:686) [portal-impl.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor674.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:41) [portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:40) [portal-impl.jar:?]
+	at com.sun.proxy.$Proxy67.forEachCompanyId(Unknown Source) [?:?]
+	at com.liferay.portal.security.sso.openid.connect.internal.configuration.instance.lifecycle.OpenIdConnectProviderPortalInstanceLifecycleListener._deleteOAuthClientEntries(OpenIdConnectProviderPortalInstanceLifecycleListener.java:139) [bundleFile:?]
+	at com.liferay.portal.security.sso.openid.connect.internal.configuration.instance.lifecycle.OpenIdConnectProviderPortalInstanceLifecycleListener.access$200(OpenIdConnectProviderPortalInstanceLifecycleListener.java:65) [bundleFile:?]
+	at com.liferay.portal.security.sso.openid.connect.internal.configuration.instance.lifecycle.OpenIdConnectProviderPortalInstanceLifecycleListener$OpenIdConnectProviderManagedServiceFactory.deleted(OpenIdConnectProviderPortalInstanceLifecycleListener.java:503) [bundleFile:?]
+	at org.apache.felix.cm.impl.helper.ManagedServiceFactoryTracker.deleted(ManagedServiceFactoryTracker.java:179) [bundleFile:?]
+	at org.apache.felix.cm.impl.helper.ManagedServiceFactoryTracker.removeConfiguration(ManagedServiceFactoryTracker.java:120) [bundleFile:?]
+	at org.apache.felix.cm.impl.ConfigurationManager$DeleteConfiguration.run(ConfigurationManager.java:1468) [bundleFile:?]
+	at org.apache.felix.cm.impl.UpdateThread.run0(UpdateThread.java:138) [bundleFile:?]
+	at org.apache.felix.cm.impl.UpdateThread.run(UpdateThread.java:105) [bundleFile:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2026-03-06 09:46:35.257 WARN  [http-nio-8080-exec-7][SecurityPortletContainerWrapper:395] User 0 is not allowed to access URL http://localhost:8080/home and portlet com_liferay_login_web_portlet_LoginPortlet: User 0 did not provide a valid CSRF token for com.liferay.portlet.SecurityPortletContainerWrapper
+2026-03-06 10:00:42.864 ERROR [http-nio-8080-exec-3][ComboServlet:412] Skip com_liferay_oauth_client_admin_web_internal_portlet_OAuthClientAdminPortlet:/o/oauth-client-admin-web/css/main.css because its content type is not CSS or JavaScript
+2026-03-06 10:01:04.762 ERROR [http-nio-8080-exec-1][ComboServlet:412] Skip com_liferay_oauth_client_admin_web_internal_portlet_OAuthClientAdminPortlet:/o/oauth-client-admin-web/css/main.css because its content type is not CSS or JavaScript
+2026-03-06 10:01:14.137 ERROR [http-nio-8080-exec-5][ComboServlet:412] Skip com_liferay_oauth_client_admin_web_internal_portlet_OAuthClientAdminPortlet:/o/oauth-client-admin-web/css/main.css because its content type is not CSS or JavaScript
