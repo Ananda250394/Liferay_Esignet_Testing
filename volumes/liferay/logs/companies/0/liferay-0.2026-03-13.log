@@ -1,0 +1,56 @@
+2026-03-13 04:17:53.487 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Xms2048m -Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-03-13 04:17:56.266 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect org.hibernate.dialect.PostgreSQL10Dialect for PostgreSQL 15.4
+2026-03-13 04:17:58.274 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-03-13 04:17:58.780 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-03-13 04:17:59.651 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-03-13 04:17:59.655 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-03-13 04:18:01.173 WARN  [Start Level: Equinox Container: a7d70a04-7cbb-42b0-a323-208c3abbf16c][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-03-13 04:18:11.407 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-03-13 04:18:11.413 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-03-13 04:18:14.614 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-03-13 04:18:14.616 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-03-13 04:18:16.540 ERROR [main][StartupAction:68] Files [/opt/liferay/tomcat/lib/ext/postgresql-42.6.0.jar] in /opt/liferay/tomcat/lib/ext are no longer read. Move them to /opt/liferay/tomcat/lib or /opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/.
+2026-03-13 04:18:16.546 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2026-03-13 04:18:16.756 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2026-03-13 04:18:16.840 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 83 ms
+2026-03-13 04:18:17.234 INFO  [main][LicenseManager:-1] DXP Development license validation passed
+2026-03-13 04:18:18.530 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-03-13 04:18:32.391 INFO  [SystemExecutorServiceUtil-9][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2026-03-13 04:18:55.322 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313041855245SCWLKDYN/admin-theme.war
+2026-03-13 04:18:56.351 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313041855245SCWLKDYN/admin-theme.war copied successfully
+2026-03-13 04:18:57.892 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313041857878NZKBCIFW/classic-theme.war
+2026-03-13 04:18:58.668 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313041857878NZKBCIFW/classic-theme.war copied successfully
+2026-03-13 04:18:59.724 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313041859709VKUWWRJI/dialect-theme.war
+2026-03-13 04:19:00.442 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313041859709VKUWWRJI/dialect-theme.war copied successfully
+2026-03-13 04:19:01.372 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313041901351RDYBUXSV/minium-theme.war
+2026-03-13 04:19:02.149 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313041901351RDYBUXSV/minium-theme.war copied successfully
+2026-03-13 04:19:03.135 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313041903117BFYGKGNW/speedwell-theme.war
+2026-03-13 04:19:03.827 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313041903117BFYGKGNW/speedwell-theme.war copied successfully
+2026-03-13 09:29:24.556 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Xms2048m -Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-03-13 09:29:26.459 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect org.hibernate.dialect.PostgreSQL10Dialect for PostgreSQL 15.4
+2026-03-13 09:29:27.772 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-03-13 09:29:27.988 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-03-13 09:29:28.341 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-03-13 09:29:28.343 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-03-13 09:29:29.468 WARN  [Start Level: Equinox Container: b05b8be6-3729-4fbe-9b84-8f8c0df2349b][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-03-13 09:29:34.765 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-03-13 09:29:34.766 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-03-13 09:29:36.118 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-03-13 09:29:36.119 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-03-13 09:29:37.124 ERROR [main][StartupAction:68] Files [/opt/liferay/tomcat/lib/ext/postgresql-42.6.0.jar] in /opt/liferay/tomcat/lib/ext are no longer read. Move them to /opt/liferay/tomcat/lib or /opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/.
+2026-03-13 09:29:37.127 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2026-03-13 09:29:37.209 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2026-03-13 09:29:37.252 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 42 ms
+2026-03-13 09:29:37.478 INFO  [main][LicenseManager:-1] DXP Development license validation passed
+2026-03-13 09:29:37.958 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-03-13 09:29:44.481 INFO  [SystemExecutorServiceUtil-12][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2026-03-13 09:29:56.582 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313092956345UQGZTPYP/admin-theme.war
+2026-03-13 09:29:57.698 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313092956345UQGZTPYP/admin-theme.war copied successfully
+2026-03-13 09:29:59.337 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313092959317DHCVGALV/classic-theme.war
+2026-03-13 09:30:00.147 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313092959317DHCVGALV/classic-theme.war copied successfully
+2026-03-13 09:30:01.036 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313093001021EUPDDVAJ/dialect-theme.war
+2026-03-13 09:30:01.914 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313093001021EUPDDVAJ/dialect-theme.war copied successfully
+2026-03-13 09:30:02.824 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313093002803PELFZIQJ/minium-theme.war
+2026-03-13 09:30:03.616 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313093002803PELFZIQJ/minium-theme.war copied successfully
+2026-03-13 09:30:04.613 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260313093004594SCTFQXAX/speedwell-theme.war
+2026-03-13 09:30:05.278 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260313093004594SCTFQXAX/speedwell-theme.war copied successfully

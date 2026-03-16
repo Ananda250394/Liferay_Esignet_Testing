@@ -1,0 +1,200 @@
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:152) [portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:336) [portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:152) [portal-kernel.jar:?]
+	at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:253) [portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:152) [portal-kernel.jar:?]
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:116) [bundleFile:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) [bundleFile:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) [portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) [com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:641) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:415) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:347) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:284) [catalina.jar:9.0.90]
+	at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:380) [portal-impl.jar:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389) [urlrewritefilter-4.0.4.jar:4.0.4]
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:86) [bundleFile:?]
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:42) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:204) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:109) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:168) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:189) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:92) [portal-kernel.jar:?]
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:109) [portal-kernel.jar:?]
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:69) [com.liferay.shielded.container.impl.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [catalina.jar:9.0.90]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [catalina.jar:9.0.90]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [catalina.jar:9.0.90]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [catalina.jar:9.0.90]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [catalina.jar:9.0.90]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388) [tomcat-coyote.jar:9.0.90]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-coyote.jar:9.0.90]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936) [tomcat-coyote.jar:9.0.90]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-coyote.jar:9.0.90]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-coyote.jar:9.0.90]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-util.jar:9.0.90]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.90]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util.jar:9.0.90]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.IllegalStateException: Set render parameter has already been called
+	at com.liferay.portlet.internal.ActionResponseImpl.sendRedirect(ActionResponseImpl.java:43) ~[portal-impl.jar:?]
+	at com.liferay.portal.util.PortalImpl.sendError(PortalImpl.java:5983) ~[portal-impl.jar:?]
+	at com.liferay.portal.util.PortalImpl.sendError(PortalImpl.java:5951) ~[portal-impl.jar:?]
+	at com.liferay.login.authentication.openid.connect.web.internal.portlet.action.OpenIdConnectLoginRequestMVCActionCommand.doProcessAction(OpenIdConnectLoginRequestMVCActionCommand.java:206) ~[?:?]
+	at com.liferay.portal.kernel.portlet.bridges.mvc.BaseMVCActionCommand.processAction(BaseMVCActionCommand.java:48) ~[portal-kernel.jar:?]
+	... 184 more
+2026-03-11 12:20:34.564 ERROR [http-nio-8080-exec-8][StatusDisplayContext:83] Error: Unable to get tokens from http://localhost:3000/v1/esignet/oauth/v2/token: Connection refused (Connection refused)
+[LIFERAY] To SSH into this container, run: "docker exec -it 55cfd6138d50 /bin/bash".
+
+[LIFERAY] Using zulu11 JDK. You can use another JDK by setting the "JAVA_VERSION" environment variable.
+[LIFERAY] Available JDKs: zulu11.
+[LIFERAY] Run this container with the option "-v $(pwd)/xyz123:/mnt/liferay" to bridge $(pwd)/xyz123 in the host operating system to /mnt/liferay on the container.
+
+[LIFERAY] The directory /mnt/liferay/files does not exist. Create the directory $(pwd)/xyz123/files on the host operating system to create the directory /mnt/liferay/files on the container. Files in /mnt/liferay/files will be copied to /opt/liferay before Liferay DXP starts.
+
+[LIFERAY] The directory /mnt/liferay/scripts does not exist. Create the directory $(pwd)/xyz123/scripts on the host operating system to create the directory /mnt/liferay/scripts on the container. Files in /mnt/liferay/scripts will be executed, in alphabetical order, before Liferay DXP starts.
+
+[LIFERAY] The directory /mnt/liferay/deploy does not exist. Create the directory $(pwd)/xyz123/deploy on the host operating system to create the directory /mnt/liferay/deploy on the container. Copy files to $(pwd)/xyz123/deploy to deploy modules to Liferay DXP at runtime.
+
+[LIFERAY] Starting Liferay DXP. To stop the container with CTRL-C, run this container with the option "-it".
+
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Mar-2026 12:57:41.755 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [904] milliseconds
+Loading jar:file:/opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/system.properties
+Loading jar:file:/opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/portal.properties
+Loading file:/opt/liferay/portal-ext.properties
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-03-11 12:57:44.916 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Xms2048m -Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-03-11 12:57:46.793 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect org.hibernate.dialect.PostgreSQL10Dialect for PostgreSQL 15.4
+2026-03-11 12:57:49.033 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-03-11 12:57:49.332 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-03-11 12:57:49.851 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-03-11 12:57:49.853 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-03-11 12:57:52.002 WARN  [Start Level: Equinox Container: b7e78f7e-35d2-46cb-aa4f-abdf1dbb70b8][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-03-11 12:58:02.980 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-03-11 12:58:02.982 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-03-11 12:58:05.214 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-03-11 12:58:05.216 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-03-11 12:58:07.190 ERROR [main][StartupAction:68] Files [/opt/liferay/tomcat/lib/ext/postgresql-42.6.0.jar] in /opt/liferay/tomcat/lib/ext are no longer read. Move them to /opt/liferay/tomcat/lib or /opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/.
+
+    __    ____________________  _____  __
+   / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+ / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+Starting Liferay Digital Experience Platform 2024.Q2.11 (August 26, 2024)
+
+2026-03-11 12:58:07.194 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2026-03-11 12:58:07.354 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2026-03-11 12:58:07.407 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 52 ms
+2026-03-11 12:58:07.706 INFO  [main][LicenseManager:-1] DXP Development license validation passed
+2026-03-11 12:58:08.348 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-03-11 12:58:17.808 INFO  [SystemExecutorServiceUtil-4][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2026-03-11 12:58:30.721 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311125830570YOSFFFQZ/admin-theme.war
+11-Mar-2026 12:58:31.089 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [49331] milliseconds
+2026-03-11 12:58:32.150 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311125830570YOSFFFQZ/admin-theme.war copied successfully
+2026-03-11 12:58:33.942 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311125833921WUWQTUXF/classic-theme.war
+2026-03-11 12:58:35.013 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311125833921WUWQTUXF/classic-theme.war copied successfully
+2026-03-11 12:58:36.006 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311125835990KBMWIUSR/dialect-theme.war
+2026-03-11 12:58:36.946 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311125835990KBMWIUSR/dialect-theme.war copied successfully
+2026-03-11 12:58:37.960 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311125837938UFXCXXRC/minium-theme.war
+2026-03-11 12:58:38.862 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311125837938UFXCXXRC/minium-theme.war copied successfully
+2026-03-11 12:58:39.954 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311125839940KBLANOUL/speedwell-theme.war
+2026-03-11 12:58:40.694 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311125839940KBLANOUL/speedwell-theme.war copied successfully
+2026-03-11 12:59:33.448 INFO  [http-nio-8080-exec-2][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260311125933417AZWOFVZD
+2026-03-11 12:59:49.631 ERROR [http-nio-8080-exec-3][StatusDisplayContext:83] Error: Unable to get tokens from http://localhost:3000/v1/esignet/oauth/v2/token: Connection refused (Connection refused)
+[LIFERAY] To SSH into this container, run: "docker exec -it 55cfd6138d50 /bin/bash".
+
+[LIFERAY] Using zulu11 JDK. You can use another JDK by setting the "JAVA_VERSION" environment variable.
+[LIFERAY] Available JDKs: zulu11.
+[LIFERAY] Run this container with the option "-v $(pwd)/xyz123:/mnt/liferay" to bridge $(pwd)/xyz123 in the host operating system to /mnt/liferay on the container.
+
+[LIFERAY] The directory /mnt/liferay/files does not exist. Create the directory $(pwd)/xyz123/files on the host operating system to create the directory /mnt/liferay/files on the container. Files in /mnt/liferay/files will be copied to /opt/liferay before Liferay DXP starts.
+
+[LIFERAY] The directory /mnt/liferay/scripts does not exist. Create the directory $(pwd)/xyz123/scripts on the host operating system to create the directory /mnt/liferay/scripts on the container. Files in /mnt/liferay/scripts will be executed, in alphabetical order, before Liferay DXP starts.
+
+[LIFERAY] The directory /mnt/liferay/deploy does not exist. Create the directory $(pwd)/xyz123/deploy on the host operating system to create the directory /mnt/liferay/deploy on the container. Copy files to $(pwd)/xyz123/deploy to deploy modules to Liferay DXP at runtime.
+
+[LIFERAY] Starting Liferay DXP. To stop the container with CTRL-C, run this container with the option "-it".
+
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Mar-2026 13:03:19.260 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [512] milliseconds
+Loading jar:file:/opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/system.properties
+Loading jar:file:/opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/portal-impl.jar!/portal.properties
+Loading file:/opt/liferay/portal-ext.properties
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-03-11 13:03:20.698 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Xms2048m -Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-03-11 13:03:21.607 INFO  [SystemExecutorServiceUtil-1][DialectDetector:144] Using dialect org.hibernate.dialect.PostgreSQL10Dialect for PostgreSQL 15.4
+2026-03-11 13:03:21.895 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-03-11 13:03:22.070 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-03-11 13:03:22.639 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-03-11 13:03:22.640 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-03-11 13:03:24.002 WARN  [Start Level: Equinox Container: 5a6f09af-034c-4301-87c4-2ef7fc43b7f5][SidecarManager:72] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-03-11 13:03:30.063 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-03-11 13:03:30.065 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-03-11 13:03:31.962 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-03-11 13:03:31.964 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-03-11 13:03:33.109 ERROR [main][StartupAction:68] Files [/opt/liferay/tomcat/lib/ext/postgresql-42.6.0.jar] in /opt/liferay/tomcat/lib/ext are no longer read. Move them to /opt/liferay/tomcat/lib or /opt/liferay/tomcat/webapps/ROOT/WEB-INF/shielded-container-lib/.
+
+    __    ____________________  _____  __
+   / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+ / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+Starting Liferay Digital Experience Platform 2024.Q2.11 (August 26, 2024)
+
+2026-03-11 13:03:33.120 INFO  [main][StartupHelperUtil:97] There are no patches installed
+2026-03-11 13:03:33.291 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2026-03-11 13:03:33.363 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 72 ms
+2026-03-11 13:03:33.619 INFO  [main][LicenseManager:-1] DXP Development license validation passed
+2026-03-11 13:03:34.321 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-03-11 13:03:40.262 INFO  [SystemExecutorServiceUtil-1][Sidecar:103] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2026-03-11 13:03:52.315 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311130352254RIRPDZIY/admin-theme.war
+11-Mar-2026 13:03:53.331 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [34070] milliseconds
+2026-03-11 13:03:53.524 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311130352254RIRPDZIY/admin-theme.war copied successfully
+2026-03-11 13:03:55.220 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311130355207CKOFSDYW/classic-theme.war
+2026-03-11 13:03:56.197 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311130355207CKOFSDYW/classic-theme.war copied successfully
+2026-03-11 13:03:57.203 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311130357193JXJRLYFY/dialect-theme.war
+2026-03-11 13:03:57.934 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311130357193JXJRLYFY/dialect-theme.war copied successfully
+2026-03-11 13:03:59.202 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311130359187FZOFJQKH/minium-theme.war
+2026-03-11 13:04:00.018 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311130359187FZOFJQKH/minium-theme.war copied successfully
+2026-03-11 13:04:01.091 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260311130401078GHPTKTNT/speedwell-theme.war
+2026-03-11 13:04:01.758 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260311130401078GHPTKTNT/speedwell-theme.war copied successfully
+2026-03-11 13:05:28.467 INFO  [http-nio-8080-exec-5][IPGeocoderImpl:137] Use temp file /opt/liferay/tomcat/temp/20260311130528436VOPHFPXW
+2026-03-11 13:05:48.115 ERROR [http-nio-8080-exec-3][StatusDisplayContext:83] Error: Unable to get tokens from http://localhost:3000/v1/esignet/oauth/v2/token: Connection refused (Connection refused)
+2026-03-11 13:18:37.431 ERROR [http-nio-8080-exec-9][StatusDisplayContext:83] Error: Unable to get tokens from http://localhost:3000/v1/esignet/oauth/v2/token: Connection refused (Connection refused)
