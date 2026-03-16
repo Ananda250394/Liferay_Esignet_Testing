@@ -1,0 +1,93 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15.4
+    container_name: liferay-db
+    environment:
+      - POSTGRES_USER=liferay
+      - POSTGRES_PASSWORD=liferay
+      - POSTGRES_DB=liferay
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U liferay"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - liferay-network
+
+  liferay:
+    image: liferay/dxp:2024.q2.11
+    container_name: liferay-app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+    environment:
+      - LIFERAY_JDBC_PERIOD_DEFAULT_DRIVER_CLASS_NAME=org.postgresql.Driver
+      - LIFERAY_JDBC_PERIOD_DEFAULT_URL=jdbc:postgresql://postgres:5432/liferay
+      - LIFERAY_JDBC_PERIOD_DEFAULT_USERNAME=liferay
+      - LIFERAY_JDBC_PERIOD_DEFAULT_PASSWORD=liferay
+      - LIFERAY_JDBC_PERIOD_DEFAULT_MINIMUM_POOL_SIZE=10
+      - LIFERAY_JDBC_PERIOD_DEFAULT_MAXIMUM_POOL_SIZE=50
+      - LIFERAY_WEB_SERVER_DISPLAY_NODE=true
+      - LIFERAY_SETUP_WIZARD_ENABLED=false
+      - LIFERAY_DEFAULT_ADMIN_FIRST_NAME=Test
+      - LIFERAY_DEFAULT_ADMIN_LAST_NAME=User
+      - LIFERAY_DEFAULT_ADMIN_EMAIL_ADDRESS=test@liferay.com
+      - LIFERAY_JVM_OPTS=-Xms2048m -Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m
+      - LIFERAY_OPENID_CONNECT_ENABLED=true
+      - LIFERAY_OPENID_CONNECT_AUTH_ENABLED=true
+      - LIFERAY_COMPANY_SECURITY_AUTH_TYPE=emailAddress
+    volumes:
+      - ./portal-ext.properties:/opt/liferay/portal-ext.properties
+      - ./volumes/liferay/deploy:/opt/liferay/deploy
+      - ./volumes/liferay/data:/opt/liferay/data
+      - ./volumes/liferay/logs:/opt/liferay/logs
+      - ./volumes/liferay/osgi/configs:/opt/liferay/osgi/configs
+      - ./postgresql-42.6.0.jar:/opt/liferay/tomcat/lib/ext/postgresql-42.6.0.jar
+    extra_hosts:
+      - "localhost:host-gateway"
+    restart: unless-stopped
+    networks:
+      - liferay-network
+
+  token-proxy:
+    build: ./token-proxy
+    container_name: esignet-token-proxy
+    ports:
+      - "8089:8089"
+    networks:
+      - liferay-network
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: liferay-pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@liferay.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+      - PGADMIN_CONFIG_SERVER_MODE=False
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - liferay-network
+
+networks:
+  liferay-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  pgadmin-data:
