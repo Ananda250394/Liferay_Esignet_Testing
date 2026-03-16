@@ -1,0 +1,6 @@
+providerName="eSignet"
+discoveryEndPoint="http://host.docker.internal:8088/v1/esignet/oidc/.well-known/openid-configuration"
+discoveryEndPointCacheInMillis=L"0"
+openIdConnectClientId="liferay-portal-client"
+openIdConnectClientSecret="dummy"
+scopes="openid profile email"

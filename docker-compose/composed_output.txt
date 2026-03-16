@@ -1,0 +1,152 @@
+name: docker-compose
+services:
+  database:
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres:bookworm
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5455"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\KCDC 1\Desktop\q2\esignet\docker-compose\init.sql
+        target: /docker-entrypoint-initdb.d/init.sql
+        bind:
+          create_host_path: true
+  esignet:
+    depends_on:
+      database:
+        condition: service_started
+        required: true
+      mock-identity-system:
+        condition: service_started
+        required: true
+      redis:
+        condition: service_started
+        required: true
+    entrypoint:
+      - sh
+      - -c
+      - rm -rf /home/mosip/hsm-client/* && cd /home/mosip && ./configure_start.sh
+    environment:
+      KAFKA_ENABLED: "false"
+      MOSIP_ESIGNET_DATABASE_PASSWORD: postgres
+      MOSIP_ESIGNET_DATABASE_URL: jdbc:postgresql://database:5432/mosip_esignet?currentSchema=esignet
+      MOSIP_ESIGNET_DATABASE_USERNAME: postgres
+      MOSIP_ESIGNET_DOMAIN_URL: http://localhost:8088
+      MOSIP_ESIGNET_INTEGRATION_KEY_BINDER: MockKeyBindingWrapperService
+      MOSIP_ESIGNET_MOCK_DOMAIN_URL: http://mock-identity-system:8082
+      SPRING_AUTOCONFIGURE_EXCLUDE: org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration
+      SPRING_CACHE_TYPE: redis
+      SPRING_REDIS_HOST: redis-server
+      SPRING_REDIS_PASSWORD: ""
+      active_profile_env: local
+      container_user: mosip
+      plugin_name_env: esignet-mock-plugin.jar
+    image: mosipid/esignet-with-plugins:1.7.1
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8088
+        published: "8088"
+        protocol: tcp
+    user: root
+    volumes:
+      - type: volume
+        source: esignet-hsm
+        target: /home/mosip/hsm-client
+        volume: {}
+  esignet-ui:
+    depends_on:
+      esignet:
+        condition: service_started
+        required: true
+    entrypoint:
+      - sh
+      - -c
+      - |
+        mkdir -p /usr/share/nginx/html/plugins/temp
+        wget --no-check-certificate -q "https://raw.githubusercontent.com/mosip/artifactory-ref-impl/master/artifacts/src/mosip-plugins/sign-in-with-esignet/sign-in-with-esignet.zip" -O /usr/share/nginx/html/plugins/temp/sign-in-button-plugin.zip
+        cp /home/mosip/configure_start.sh /tmp/cs.sh
+        sed -i'' 's/xargs sed -i /xargs sed -i"" /g' /tmp/cs.sh
+        cd /home/mosip && sh configure_start.sh
+    environment:
+      DEFAULT_WELLKNOWN: '%5B%7B%22name%22%3A%22OpenID%20Configuration%22%2C%22value%22%3A%22%2F.well-known%2Fopenid-configuration%22%7D%2C%7B%22name%22%3A%22Jwks%20Json%22%2C%22value%22%3A%22%2F.well-known%2Fjwks.json%22%7D%2C%7B%22name%22%3A%22Authorization%20Server%22%2C%22value%22%3A%22%2F.well-known%2Foauth-authorization-server%22%7D%5D'
+      SIGN_IN_WITH_ESIGNET_PLUGIN_URL: https://raw.githubusercontent.com/mosip/artifactory-ref-impl/master/artifacts/src/mosip-plugins/sign-in-with-esignet/sign-in-with-esignet.zip
+      container_user: mosip
+    image: mosipid/oidc-ui:1.7.1
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3000
+        published: "3000"
+        protocol: tcp
+    restart: always
+    user: root
+    volumes:
+      - type: bind
+        source: C:\Users\KCDC 1\Desktop\q2\esignet\docker-compose\nginx.conf
+        target: /etc/nginx/nginx.conf
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\KCDC 1\Desktop\q2\esignet\docker-compose\fixed_configure_start.sh
+        target: /home/mosip/configure_start.sh
+        bind:
+          create_host_path: true
+  mock-identity-system:
+    depends_on:
+      database:
+        condition: service_started
+        required: true
+    environment:
+      MOSIP_ESIGNET_HOST: localhost:8088
+      MOSIP_MOCK_IDA_KBI_DEFAULT_FIELD_LANGUAGE: eng
+      MOSIP_MOCK_IDA_KYC_TRANSACTION_TIMEOUT_SECS: "900"
+      SPRING_CONFIG_ADDITIONAL_LOCATION: file:/home/mosip/mock-identity-system.properties
+      SPRING_DATASOURCE_PASSWORD: postgres
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/mosip_mockidentitysystem?currentSchema=mockidentitysystem
+      SPRING_DATASOURCE_USERNAME: postgres
+      active_profile_env: local
+      container_user: mosip
+      loader_path_env: /home/mosip/additional_jars/
+      spring_config_url_env: ""
+    image: mosipid/mock-identity-system:0.12.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8082
+        published: "8082"
+        protocol: tcp
+    user: root
+    volumes:
+      - type: bind
+        source: C:\Users\KCDC 1\Desktop\q2\esignet\docker-compose\mock-identity-system.properties
+        target: /home/mosip/mock-identity-system.properties
+        bind:
+          create_host_path: true
+  redis:
+    container_name: redis-server
+    image: redis:6.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
+networks:
+  default:
+    name: docker-compose_default
+volumes:
+  esignet-hsm:
+    name: docker-compose_esignet-hsm
